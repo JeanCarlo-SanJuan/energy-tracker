@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./altair.min.js"></script>
+    <script src="./index.js" defer></script>
+    <title>Energy Tracker by JCSJ</title>
+    <style>
+        body {
+            display: flex;
+            font-size: 1.2em;
+        }
+        main {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-self: end;
+            margin-top: 25vh;
+        }
+        section {
+            display: flex;
+            column-gap: 3vw;
+        }
+
+        div {
+            padding: 2vh 6vw;
+            background-color: bisque;
+            width: max-content;
+        }
+
+        div:hover {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div id=reset>&#x21bb;</div>
+            <div id=next>>></div>
+        </section>
+        <hr width="100%">
+        <section>
+            <div id=minus>-</div>
+            <div id=count></div>
+            <div id=plus>+</div>
+        </section>
+    </main>
+</body>
+</html>
